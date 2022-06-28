@@ -41,6 +41,7 @@ nav{
 	flex-direction: column;
 	justify-content: center;
 	padding: 5px 20px;
+	background: linear-gradient(to top, lightgrey, lightgoldenrodyellow);
 }
 
 	nav div{
@@ -93,6 +94,8 @@ nav{
 main section div img{
 	height: 100%;
 	width: 100%;
+	animation-name: imagenInicio;
+	animation-duration: 3s;
 	
 }
 
@@ -130,6 +133,7 @@ h2{
 	font-size: 50px;
 	margin-bottom: 30px;
 	
+	
 }
 
 
@@ -141,6 +145,7 @@ footer{
 	height: auto;
 	border: solid 2px black;
 	grid-area: pie;
+	background: linear-gradient(to top, lightgrey, lightgoldenrodyellow);
 	
 	
 }
@@ -184,11 +189,15 @@ footer{
 	margin-bottom: 3rem;
 	grid-area: foto;
 	padding: 0 60px;
+	animation-name: imagenInicio;
+	animation-duration: 3s;
 }
 
 .imagenAreas{
 	height: 20rem;
 	width: auto;
+	animation-name: imagenInicio;
+	animation-duration: 3s;
 }
 
 
@@ -350,6 +359,11 @@ section form label{
 		padding: 0 40rem;
 	}
 }	
+
+@keyframes imagenInicio{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
 
 
 
