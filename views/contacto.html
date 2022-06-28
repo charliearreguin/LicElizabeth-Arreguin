@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto</title>
+	<link rel="shortcut icon" href="../img/justicia.png">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<header>
+	<nav>
+		<div>
+			<img class="navLogo" src="../img/justicia.png" alt="">
+			<h1 class="nombreHeader">Lic. Elizabeth Ojinaga Ruiz</h1>
+		</div>	
+			<ul>
+				<li>
+					<a href="../index.html">Inicio</a>
+				</li>
+				<li>
+					<a href="../views/quien_soy.html">¿Quien soy?</a>
+				</li>
+				<li>
+					<a href="../views/oficinas.html">Oficinas</a>
+				</li>
+				<li>
+					<a href="../views/areas_de_practica.html">Áreas de práctica</a>
+				</li>
+			</ul>
+	</nav>
+</header>
+<body>
+	<main>
+		<h2>Contacto</h2>
+		<!-- inicia form -->
+		<section class="formulario">
+			<form action="envio.php">
+				<fieldset>
+					<label for="name">Nombre</label>
+					<input type="text" id="name" placeholder="Nombre">
+					<label for="email">Email</label>
+					<input type="email" id="email" placeholder="hola.amigo@gmail.com">
+					<label for="">Área de Práctica</label>
+					<select name="País" id="">
+						<option value="méxico">Derecho Fiscal</option>
+						<option value="eua">Derecho Penal</option>
+						<option value="argentina">Derecho Ambiental</option>
+						<option value="colombia">Derecho Contractual</option>
+						<option value="venezuela">Derecho de Propiedad Intelectual</option>
+						<option value="otro">Derecho Migratorio</option>
+					</select>
+					<br>
+					<label for="mensaje">Mensaje</label>
+					<br>
+					<textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+					<input type="reset" value="Cancelar">
+					<input type="submit" value="Enviar">
+				</fieldset>
+				
+			</form>
+		</section>
+		<!-- ends form -->
+	</main>
+	
+</body>
+<footer>
+	<ul>
+		<li>
+			<a href="../views/contacto.html">Contacto</a>
+		</li>
+		<li>
+			<a href="../views/aviso_de_privacidad.html">Aviso de Privacidad</a>
+		</li>
+	</ul>
+</footer>
+</html>

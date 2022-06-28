@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@300;400&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	
+
+}
+
+html{
+	height: 100%;
+	font-size: 62.5%;
+}
+
+body{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"nav" "titulo" "image" "texto" "pie";
+	height: 100%;
+	
+}
+
+h1{
+	font-family: 'Abril Fatface', cursive;
+	font-size: 21px;
+	margin-top: 17px;
+}
+
+/*Inicia Nav*/
+
+nav{
+	background-color: lightgrey;
+	height: 15vh;
+	align-items: center;
+	border: solid 2px black;
+	grid-area: nav;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 5px 20px;
+}
+
+	nav div{
+		display: flex;
+		justify-content: start;
+		
+
+	}
+
+
+
+	nav ul{
+		
+		display: flex;
+		margin-top: 5px;
+		margin-bottom: 0;
+		
+		
+
+		}
+
+	nav ul li{
+			list-style: none;
+		margin-right: 20px;
+			
+		}
+
+
+	nav ul li a{
+			text-decoration: none;
+			color: black;
+			font-family: 'Inter', sans-serif;
+			font-size: 2rem;
+
+		}
+	
+	nav ul li a:hover{
+			color: ghostwhite;
+			font-weight: 600;
+			}	
+
+	.navLogo{
+		width: 60px;
+		height: 60px;
+	}	
+
+/*Termina Nav*/
+
+
+main section div img{
+	height: 100%;
+	width: 100%;
+	
+}
+
+
+
+.gridImage{
+	grid-area: image;
+
+}
+
+.gridTitulo{
+	grid-area: titulo;
+	font-size: 30px;
+	text-align: center;
+	margin: 10px;
+}
+
+
+.presentacion{
+	font-size: 20px;
+	font-family: 'Inter', sans-serif;
+	text-align: center;
+	margin-top: 5px;
+	grid-area: texto;
+	padding: 10px 20px;
+	text-align: justify;
+}
+
+
+
+
+h2{
+	text-align: center;
+	margin-top: 30px;
+	font-size: 50px;
+	margin-bottom: 30px;
+	
+}
+
+
+
+/*Inicia footer*/
+
+footer{
+	background-color: lightgrey;
+	height: auto;
+	border: solid 2px black;
+	grid-area: pie;
+	
+	
+}
+
+	footer ul{
+		display: inline-block;
+		
+
+	}
+
+	footer ul li{
+		list-style: none;
+		display: inline;
+		justify-content: flex-end;
+		margin-right: 10px;
+	}
+
+	footer ul li a{
+		text-decoration: none;
+		display: inline-block;
+		
+		font-size: 20px;
+		font-family: 'Inter', sans-serif;
+		color: black;
+		margin-right: 20px;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+
+	footer ul li a:hover{
+		color: whitesmoke;
+		font-weight: 600;
+	}
+
+/*Termina footer*/	
+
+.abogadaImagen{
+	height: 45rem;
+	width: auto;
+	margin-top: 1rem;
+	margin-bottom: 3rem;
+	grid-area: foto;
+	padding: 0 60px;
+}
+
+.imagenAreas{
+	height: 20rem;
+	width: auto;
+}
+
+
+
+
+.bioGrid{
+	grid-area: bio;
+	font-size: 1.8rem;
+	padding: 10px 30px;
+	text-align: justify;
+}
+
+.galeria{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	grid-area: areas;
+}
+
+.galeria figure img{
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	width: 35rem;
+	
+
+}
+
+.galeria figure figcaption{
+	font-size: 30px;
+	font-family: 'Abril Fatface', cursive;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.galeria figure{
+	
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	
+
+}
+
+.galeria figure p{
+	font-size: 20px;
+	text-align: center;
+	padding: 10px 2rem 50px 2rem;
+	font-family: 'Inter', sans-serif;
+	margin-bottom: 30px;
+	margin-top: 1px;
+	text-align: justify;
+}
+
+.oficinas{
+	display: flex;
+}
+ .oficinas p{
+ 	margin-right: 10rem;
+ 	margin-left: 25rem;
+ 	font-size: 30px;
+ 	text-align: justify;
+ }
+
+.oficinas iframe{
+	margin-right: 40rem;
+	margin-top: 5rem;
+
+}
+
+section form{
+	margin: 10rem 25rem 0 25rem; 
+}
+
+section form label{
+	font-size: 20px;
+	font-family: 'Inter', sans-serif;
+}
+
+.avisoGrid{
+	grid-area: aviso;
+}
+
+#areas{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"nav" "titulo" "areas" "pie";
+	height: 100%;
+}
+
+#soy{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"nav" "titulo" "bio" "foto" "pie";
+	height: 100%;
+}
+
+#aviso{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"nav" "titulo" "aviso" "pie";
+	height: 100%;
+}
+
+/*MEDIA*/
+
+@media (min-width: 1024px){
+	.botonera{
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.presentacion{
+		padding: 0 40rem;
+	}
+
+	main section div img{
+	height: 45%;
+	width: 45%;
+	margin-left: 46rem;
+	}
+
+	main{
+		display: flex;
+		justify-content: center;
+	}
+
+	.galeria{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.galeria figure{
+		width: 50rem;
+		justify-content: space-around;
+	}
+
+	.bioGrid{
+		font-size: 30px;
+	}
+
+	.abogadaImagen{
+		height: 50rem;
+		width: auto;
+	}
+
+	.avisoGrid{
+		font-size: 20px;
+		text-align: justify;
+		padding: 0 40rem;
+	}
+}	
+
+
+
+
+
