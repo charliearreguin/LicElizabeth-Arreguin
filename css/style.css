@@ -20,7 +20,7 @@ body{
 	grid-template-areas: 
 	"nav" "titulo" "image" "texto" "pie";
 	height: 100%;
-	
+	background-image: url(../img/fondo.jpg);
 }
 
 h1{
@@ -33,14 +33,9 @@ h1{
 
 nav{
 	background-color: lightgrey;
-	height: 15vh;
 	align-items: center;
-	border: solid 2px black;
+	
 	grid-area: nav;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 5px 20px;
 	background: linear-gradient(to top, lightgrey, lightgoldenrodyellow);
 }
 
@@ -77,16 +72,18 @@ nav{
 			font-size: 2rem;
 
 		}
-	
-	nav ul li a:hover{
-			color: ghostwhite;
-			font-weight: 600;
-			}	
+		
 
 	.navLogo{
 		width: 60px;
 		height: 60px;
 	}	
+
+	.nombreLogo{
+		font-size: 2rem;
+		font-family: 'Abril Fatface', cursive;
+
+	}
 
 /*Termina Nav*/
 
@@ -129,7 +126,7 @@ main section div img{
 
 h2{
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 25px;
 	font-size: 50px;
 	margin-bottom: 30px;
 	
@@ -142,44 +139,19 @@ h2{
 
 footer{
 	background-color: lightgrey;
-	height: auto;
-	border: solid 2px black;
 	grid-area: pie;
 	background: linear-gradient(to top, lightgrey, lightgoldenrodyellow);
-	
-	
+	height: auto;
+
+	}
+footer div div a{
+	margin-right: 2rem;
 }
 
-	footer ul{
-		display: inline-block;
-		
-
-	}
-
-	footer ul li{
-		list-style: none;
-		display: inline;
-		justify-content: flex-end;
-		margin-right: 10px;
-	}
-
-	footer ul li a{
-		text-decoration: none;
-		display: inline-block;
-		
-		font-size: 20px;
-		font-family: 'Inter', sans-serif;
-		color: black;
-		margin-right: 20px;
-		margin-left: 20px;
-		margin-top: 20px;
-	}
-
-	footer ul li a:hover{
-		color: whitesmoke;
-		font-weight: 600;
-	}
-
+footer div a{
+	font-size: 1.5rem;
+}
+	
 /*Termina footer*/	
 
 .abogadaImagen{
@@ -255,32 +227,26 @@ footer{
 }
 
 .oficinas{
-	display: flex;
-}
- .oficinas p{
- 	margin-right: 10rem;
- 	margin-left: 25rem;
- 	font-size: 30px;
- 	text-align: justify;
- }
-
-.oficinas iframe{
-	margin-right: 40rem;
-	margin-top: 5rem;
-
-}
-
-section form{
-	margin: 10rem 25rem 0 25rem; 
-}
-
-section form label{
-	font-size: 20px;
+	font-size: 1.8rem;
 	font-family: 'Inter', sans-serif;
+	text-align: justify;
+}
+
+
+.formulario{
+	background-color: ;
 }
 
 .avisoGrid{
 	grid-area: aviso;
+	text-align: justify;
+	padding: 0 15px;
+	font-family: 'Inter', sans-serif;
+	font-size: 10px;
+}
+
+.enviar{
+	background-color: lightyellow;
 }
 
 #areas{
