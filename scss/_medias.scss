@@ -1,0 +1,41 @@
+
+@media (min-width: 1024px){
+	.botonera{
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.presentacion{
+		padding: 0 40rem;
+	}
+
+	main section div img{
+	height: 45%;
+	width: 45%;
+	margin-left: 46rem;
+	}
+
+	main{
+		display: flex;
+		justify-content: center;
+	}
+
+	.galeria{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.galeria figure{
+		width: 50rem;
+		justify-content: space-around;
+	}
+
+
+
+	.avisoGrid{
+		font-size: 20px;
+		text-align: justify;
+		padding: 0 40rem;
+	}
+}	

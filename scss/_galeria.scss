@@ -1,0 +1,56 @@
+
+.galeria{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	grid-area: areas;
+	figure{
+		text-align: center;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		img{
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+			border-bottom-left-radius: 20px;
+			border-bottom-right-radius: 20px;
+			width: 35rem;
+		}
+
+		figcaption{
+			font-size: 30px;
+			font-family: 'Abril Fatface', cursive;
+			margin-top: 10px;
+			text-align: center;
+		}
+
+		p{
+			font-size: 20px;
+			text-align: center;
+			padding: 10px 2rem 50px 2rem;
+			font-family: 'Inter', sans-serif;
+			margin-bottom: 30px;
+			margin-top: 1px;
+			text-align: justify;
+		}
+
+
+	}
+
+}
+
+.imagenAreas{
+	height: 20rem;
+	width: auto;
+	animation-name: imagenInicio;
+	animation-duration: 3s;
+}
+
+#areas{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"nav" "titulo" "areas" "pie";
+	height: 100%;
+}

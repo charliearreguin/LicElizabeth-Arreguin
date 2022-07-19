@@ -41,56 +41,43 @@
 		</nav>
 		<!-- Termina Nav -->
 </header>
-	<h2>Contacto</h2>
+
 	<main>
 		<!-- inicia form -->
-		<div class="formulario">
-			<form class=" g-3 align-items-center">
-			  <div class="col-12">
-			    <label class="visually-hidden" for="inlineFormInputGroupUsername">Correo</label>
-			    <div class="input-group">
-			      <div class="input-group-text">E-mail</div>
-			      <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="hola@ejemplo.com">
-			    </div>
-			  </div>
-
-			  <div class="col-12">
-			    <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
-			    <select class="form-select" id="inlineFormSelectPref">
-			      <option selected>Área</option>
-			      <option value="1">Fiscal</option>
-			      <option value="2">Penal</option>
-			      <option value="3">Ambiental</option>
-			      <option value="4">Contractual</option>
-			      <option value="5">Propiedad Intelectual</option>
-			      <option value="6">Migratorio</option>
-			    </select>
-			  </div>
-
-			  <div class="col-12">
-			    <div class="form-check">
-			      <input class="form-check-input" type="checkbox" id="inlineFormCheck">
-			      <label class="form-check-label" for="inlineFormCheck">
-			        Acepto Aviso de Privacidad
-			      </label>
-			    </div>
-			  </div>
-
-			  <div class="col-12">
-			    <button type="submit" class="btn enviar">Enviar</button>
-			  </div>
+		<div class="container" id="contenedor-formulario">
+			<div id="titulo-formulario" class="text-center mb-4">
+				<h2>Contactanos</h2>
+			</div>
+			<form action="">
+				<div class="mb-3">
+				  <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com"required>
+				</div>
+				<div class="mb-3">
+				<div class="mb-3">
+				  <input type="text" class="form-control" id="nombre" placeholder="Nombre Apellido"required>
+				</div>
+				<div class="mb-3">
+				<div class="mb-3">
+				  <input type="tel" class="form-control" id="tel" placeholder="000-000-000"required>
+				</div>
+				<div class="mb-3">	
+				  <textarea class="form-control" placeholder="Escribe tu mensaje" id="exampleFormControlTextarea1" rows="3"></textarea>
+				</div>
+				<div class="mb-3 bg-btn ">
+					<button class="btn bg-btn  w-100 fs-5">Enviar</button>
+				</div>
 			</form>
-		</div>		
+		</div>
 		<!-- ends form -->
 	</main>
 	
 	<!-- Inica Footer -->
 	
-		<footer class="navbar navbar-expand navbar-light">
+		<footer class="navbar fixed-bottom navbar-expand navbar-light">
 		  <div class="container-fluid">
 		      <div class="navbar-nav ms-auto">
-		        <a class="nav-link" href="../views/contacto.html">Contacto</a>
-		        <a class="nav-link" href="../views/aviso_de_privacidad.html">Aviso de Privacidad</a>
+		        <a class="nav-link mx-5" href="../views/contacto.html">Contacto</a>
+		        <a class="nav-link mx-5" href="../views/aviso_de_privacidad.html">Aviso de Privacidad</a>
 		      </div>
 		    </div>
 		  </div>

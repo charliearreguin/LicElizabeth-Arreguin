@@ -1,0 +1,104 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	
+
+}
+
+html{
+	height: 100%;
+	font-size: 62.5%;
+}
+
+body{
+	height: 100%;
+	background-image: url(../img/fondo.jpg);
+	overflow-x: hidden;
+}
+
+
+h1{
+	font-family: 'Abril Fatface', cursive;
+	font-size: $textMD;
+	margin-top: 17px;
+}
+
+h2{
+	text-align: center;
+	margin-top: 25px;
+	font-size:$textLG;
+	margin-bottom: 30px;	
+}
+
+h3{
+	text-align: center;
+	font-size:$textMD;
+	font-family: $mainFont;
+
+}
+
+p{
+	font-size: $textSM;
+	text-align: center;
+	font-family: $secondFont;
+}
+
+.gridTitulo{
+	font-size: $textMD;
+	text-align: center;
+	margin: 10px;
+}
+
+#aviso{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"nav" "titulo" "aviso" "pie";
+	height: 100%;
+}
+
+.imgCards{
+	width: 20%;
+	height: auto;
+}
+
+.gridImage{
+	grid-area: image;
+
+}
+
+.presentacion{
+	font-size: $textSM;
+	font-family: $secondFont;
+	text-align: center;
+	margin-top: 5px;
+	grid-area: texto;
+	padding: 10px 20px;
+	text-align: center;
+}
+
+
+.oficinas{
+	font-size: $textSM;
+	font-family: $secondFont;
+	text-align: center;
+}
+
+.bg-btn{
+	background: $mainColor;
+}
+
+#contenedor-formulario{
+	max-width: 700px;
+}
+
+.avisoGrid{
+	grid-area: aviso;
+	text-align: justify;
+	padding: 0 15px;
+	font-family: $secondFont;
+	font-size: 10px;
+}
+

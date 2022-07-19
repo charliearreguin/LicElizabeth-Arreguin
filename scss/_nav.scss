@@ -1,0 +1,33 @@
+
+nav{
+	background-color: lightgrey;
+	align-items: center;
+	grid-area: nav;
+	background: $mainColor;
+	ul{
+		display: flex;
+		margin-top: 5px;
+		margin-bottom: 0;
+		li{
+			list-style: none;
+			margin-right: 20px;
+			a{
+			text-decoration: none;
+			color: $black;
+			font-family: $secondFont;
+			font-size:$textSM;
+			}	
+		}
+	}
+}
+
+.navLogo{
+		width: 50px;
+		height: 50px;
+}	
+
+.nombreLogo{
+	font-size: $textSM;
+	font-family: $mainFont;
+
+}

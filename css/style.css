@@ -1,337 +1,182 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@300;400&display=swap');
-
-*{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	
-
-}
-
-html{
-	height: 100%;
-	font-size: 62.5%;
-}
-
-body{
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto;
-	grid-template-areas: 
-	"nav" "titulo" "image" "texto" "pie";
-	height: 100%;
-	background-image: url(../img/fondo.jpg);
-}
-
-h1{
-	font-family: 'Abril Fatface', cursive;
-	font-size: 21px;
-	margin-top: 17px;
-}
-
-/*Inicia Nav*/
-
-nav{
-	background-color: lightgrey;
-	align-items: center;
-	
-	grid-area: nav;
-	background: linear-gradient(to top, lightgrey, lightgoldenrodyellow);
-}
-
-	nav div{
-		display: flex;
-		justify-content: start;
-		
-
-	}
-
-
-
-	nav ul{
-		
-		display: flex;
-		margin-top: 5px;
-		margin-bottom: 0;
-		
-		
-
-		}
-
-	nav ul li{
-			list-style: none;
-		margin-right: 20px;
-			
-		}
-
-
-	nav ul li a{
-			text-decoration: none;
-			color: black;
-			font-family: 'Inter', sans-serif;
-			font-size: 2rem;
-
-		}
-		
-
-	.navLogo{
-		width: 60px;
-		height: 60px;
-	}	
-
-	.nombreLogo{
-		font-size: 2rem;
-		font-family: 'Abril Fatface', cursive;
-
-	}
-
-/*Termina Nav*/
-
-
-main section div img{
-	height: 100%;
-	width: 100%;
-	animation-name: imagenInicio;
-	animation-duration: 3s;
-	
-}
-
-
-
-.gridImage{
-	grid-area: image;
-
-}
-
-.gridTitulo{
-	grid-area: titulo;
-	font-size: 30px;
-	text-align: center;
-	margin: 10px;
-}
-
-
-.presentacion{
-	font-size: 20px;
-	font-family: 'Inter', sans-serif;
-	text-align: center;
-	margin-top: 5px;
-	grid-area: texto;
-	padding: 10px 20px;
-	text-align: justify;
-}
-
-
-
-
-h2{
-	text-align: center;
-	margin-top: 25px;
-	font-size: 50px;
-	margin-bottom: 30px;
-	
-	
-}
-
-
-
-/*Inicia footer*/
-
-footer{
-	background-color: lightgrey;
-	grid-area: pie;
-	background: linear-gradient(to top, lightgrey, lightgoldenrodyellow);
-	height: auto;
-
-	}
-footer div div a{
-	margin-right: 2rem;
-}
-
-footer div a{
-	font-size: 1.5rem;
-}
-	
-/*Termina footer*/	
-
-.abogadaImagen{
-	height: 45rem;
-	width: auto;
-	margin-top: 1rem;
-	margin-bottom: 3rem;
-	grid-area: foto;
-	padding: 0 60px;
-	animation-name: imagenInicio;
-	animation-duration: 3s;
-}
-
-.imagenAreas{
-	height: 20rem;
-	width: auto;
-	animation-name: imagenInicio;
-	animation-duration: 3s;
-}
-
-
-
-
-.bioGrid{
-	grid-area: bio;
-	font-size: 1.8rem;
-	padding: 10px 30px;
-	text-align: justify;
-}
-
-.galeria{
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	grid-area: areas;
-}
-
-.galeria figure img{
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
-	width: 35rem;
-	
-
-}
-
-.galeria figure figcaption{
-	font-size: 30px;
-	font-family: 'Abril Fatface', cursive;
-	margin-top: 10px;
-	text-align: center;
-}
-
-.galeria figure{
-	
-	text-align: center;
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	
-
-}
-
-.galeria figure p{
-	font-size: 20px;
-	text-align: center;
-	padding: 10px 2rem 50px 2rem;
-	font-family: 'Inter', sans-serif;
-	margin-bottom: 30px;
-	margin-top: 1px;
-	text-align: justify;
-}
-
-.oficinas{
-	font-size: 1.8rem;
-	font-family: 'Inter', sans-serif;
-	text-align: justify;
-}
-
-
-.formulario{
-	background-color: ;
-}
-
-.avisoGrid{
-	grid-area: aviso;
-	text-align: justify;
-	padding: 0 15px;
-	font-family: 'Inter', sans-serif;
-	font-size: 10px;
-}
-
-.enviar{
-	background-color: lightyellow;
-}
-
-#areas{
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto;
-	grid-template-areas: 
-	"nav" "titulo" "areas" "pie";
-	height: 100%;
-}
-
-#soy{
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto;
-	grid-template-areas: 
-	"nav" "titulo" "bio" "foto" "pie";
-	height: 100%;
-}
-
-#aviso{
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto;
-	grid-template-areas: 
-	"nav" "titulo" "aviso" "pie";
-	height: 100%;
-}
-
-/*MEDIA*/
-
-@media (min-width: 1024px){
-	.botonera{
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	.presentacion{
-		padding: 0 40rem;
-	}
-
-	main section div img{
-	height: 45%;
-	width: 45%;
-	margin-left: 46rem;
-	}
-
-	main{
-		display: flex;
-		justify-content: center;
-	}
-
-	.galeria{
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-around;
-	}
-	.galeria figure{
-		width: 50rem;
-		justify-content: space-around;
-	}
-
-	.bioGrid{
-		font-size: 30px;
-	}
-
-	.abogadaImagen{
-		height: 50rem;
-		width: auto;
-	}
-
-	.avisoGrid{
-		font-size: 20px;
-		text-align: justify;
-		padding: 0 40rem;
-	}
-}	
-
-@keyframes imagenInicio{
-	from{opacity: 0;}
-	to{opacity: 1;}
-}
-
-
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@300;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  height: 100%;
+  font-size: 62.5%; }
+
+body {
+  height: 100%;
+  background-image: url(../img/fondo.jpg);
+  overflow-x: hidden; }
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 3rem;
+  margin-top: 17px; }
+
+h2 {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 4rem;
+  margin-bottom: 30px; }
+
+h3 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Abril Fatface", cursive; }
+
+p {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Inter", sans-serif; }
+
+.gridTitulo {
+  font-size: 3rem;
+  text-align: center;
+  margin: 10px; }
+
+#aviso {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nav" "titulo" "aviso" "pie";
+  height: 100%; }
+
+.imgCards {
+  width: 20%;
+  height: auto; }
+
+.gridImage {
+  grid-area: image; }
+
+.presentacion {
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  margin-top: 5px;
+  grid-area: texto;
+  padding: 10px 20px;
+  text-align: center; }
+
+.oficinas {
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  text-align: center; }
+
+.bg-btn {
+  background: linear-gradient(to top, lightgrey, lightgoldenrodyellow); }
+
+#contenedor-formulario {
+  max-width: 700px; }
+
+.avisoGrid {
+  grid-area: aviso;
+  text-align: justify;
+  padding: 0 15px;
+  font-family: "Inter", sans-serif;
+  font-size: 10px; }
+
+nav {
+  background-color: lightgrey;
+  align-items: center;
+  grid-area: nav;
+  background: linear-gradient(to top, lightgrey, lightgoldenrodyellow); }
+  nav ul {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 0; }
+    nav ul li {
+      list-style: none;
+      margin-right: 20px; }
+      nav ul li a {
+        text-decoration: none;
+        color: #1A1A1A;
+        font-family: "Inter", sans-serif;
+        font-size: 2rem; }
+
+.navLogo {
+  width: 50px;
+  height: 50px; }
+
+.nombreLogo {
+  font-size: 2rem;
+  font-family: "Abril Fatface", cursive; }
+
+@media (min-width: 1024px) {
+  .botonera {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  .presentacion {
+    padding: 0 40rem; }
+  main section div img {
+    height: 45%;
+    width: 45%;
+    margin-left: 46rem; }
+  main {
+    display: flex;
+    justify-content: center; }
+  .galeria {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .galeria figure {
+    width: 50rem;
+    justify-content: space-around; }
+  .avisoGrid {
+    font-size: 20px;
+    text-align: justify;
+    padding: 0 40rem; } }
+
+footer {
+  background: linear-gradient(to top, lightgrey, lightgoldenrodyellow);
+  height: auto; }
+  footer div a {
+    font-size: 2rem; }
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  grid-area: areas; }
+  .galeria figure {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .galeria figure img {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      width: 35rem; }
+    .galeria figure figcaption {
+      font-size: 30px;
+      font-family: 'Abril Fatface', cursive;
+      margin-top: 10px;
+      text-align: center; }
+    .galeria figure p {
+      font-size: 20px;
+      text-align: center;
+      padding: 10px 2rem 50px 2rem;
+      font-family: 'Inter', sans-serif;
+      margin-bottom: 30px;
+      margin-top: 1px;
+      text-align: justify; }
+
+.imagenAreas {
+  height: 20rem;
+  width: auto;
+  animation-name: imagenInicio;
+  animation-duration: 3s; }
+
+#areas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nav" "titulo" "areas" "pie";
+  height: 100%; }
