@@ -50,24 +50,29 @@
 			</div>
 			<form action="">
 				<div class="mb-3">
-				  <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com"required>
+				  <label for="correo" class="form-label formularioLabel">Correo</label>
+				  <input type="email" class="form-control formulario" id="email" placeholder="nombre@ejemplo.com"required>
 				</div>
 				<div class="mb-3">
 				<div class="mb-3">
-				  <input type="text" class="form-control" id="nombre" placeholder="Nombre Apellido"required>
+				  <label for="nombre" class="form-label formularioLabel">Nombre</label>
+				  <input type="text" class="form-control formulario" id="nombre" placeholder="Nombre Apellido"required>
 				</div>
 				<div class="mb-3">
 				<div class="mb-3">
-				  <input type="tel" class="form-control" id="tel" placeholder="000-000-000"required>
+				  <label for="telefono" class="form-label formularioLabel">Teléfono</label>
+				  <input type="tel" class="form-control formulario" id="tel" placeholder="000-000-000"required>
 				</div>
 				<div class="mb-3">	
-				  <textarea class="form-control" placeholder="Escribe tu mensaje" id="exampleFormControlTextarea1" rows="3"></textarea>
+				  <label for="mensaje" class="form-label formularioLabel">Mensaje</label>
+				  <textarea class="form-control formularioMensaje" placeholder="Escribe tu mensaje" id="exampleFormControlTextarea1" rows="3"></textarea>
 				</div>
 				<div class="mb-3 bg-btn ">
-					<button class="btn bg-btn  w-100 fs-5">Enviar</button>
+					<button class="btn bg-btn  w-100 fs-5 formulario">Enviar</button>
 				</div>
 			</form>
 		</div>
+		
 		<!-- ends form -->
 	</main>
 	

@@ -73,12 +73,7 @@ p {
 #contenedor-formulario {
   max-width: 700px; }
 
-.avisoGrid {
-  grid-area: aviso;
-  text-align: justify;
-  padding: 0 15px;
-  font-family: "Inter", sans-serif;
-  font-size: 10px; }
+
 
 nav {
   background-color: lightgrey;
@@ -111,12 +106,8 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center; }
-  .presentacion {
-    padding: 0 40rem; }
-  main section div img {
-    height: 45%;
-    width: 45%;
-    margin-left: 46rem; }
+  
+  
   main {
     display: flex;
     justify-content: center; }
@@ -180,3 +171,21 @@ footer {
   grid-template-rows: auto;
   grid-template-areas: "nav" "titulo" "areas" "pie";
   height: 100%; }
+
+ .formulario{
+  height: 4rem;
+  font-size: 1.5rem;
+ } 
+
+ .formularioMensaje{
+  height: 7rem;
+  font-size: 1.5rem;
+ } 
+
+ .formularioLabel{
+  font-size: 2rem;
+ }
+.avisoTexto{
+  text-align: justify;
+}
+
